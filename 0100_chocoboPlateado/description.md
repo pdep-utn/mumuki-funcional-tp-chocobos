@@ -1,0 +1,1 @@
+8. Definir un chocobo plateado que tenga las mejores características de los otros (mayor fuerza, menor peso, mayor velocidad), teniendo en cuenta que no tiene que ser necesario cambiar su definición si se altera un valor de los anteriores.
