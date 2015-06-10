@@ -4,7 +4,7 @@ Las pistas por las que nuestros emplumados amigos deben correr van a estar repre
 
 ```haskell
 bosqueTenebroso = [ (100, f1) , (50, f2) , (120, f2) , (200, f1) , (80, f3) ]
-pantanoDelDestino = [ (40, f2) , (90, (\(Chocobo _ (f,p,v))-> f + p + v)) , (120, fuerza) , (20, fuerza) ]
+pantanoDelDestino = [ (40, f2) , (90, (\(CChocobo _ (f,p,v))-> f + p + v)) , (120, fuerza) , (20, fuerza) ]
 
 f1 chocobo = velocidad chocobo * 2
 f2 chocobo = velocidad chocobo + fuerza chocobo
@@ -14,36 +14,30 @@ f3 chocobo = velocidad chocobo `div` peso chocobo
 Tenemos los chocobos (esenciales para una carrera de chocobos): el negro, el amarillo, el blanco y el rojo. Cada uno tiene distintas características, modeladas por medio de un data:
 
 ```haskell
-data TipoChocobo = Chocobo String (Integer,Integer,Integer)
+data Chocobo = CChocobo String (Integer,Integer,Integer) deriving (Show)
 
-instance Show TipoChocobo where
-    show (Chocobo nombre cualidades) = show (nombre, cualidades)
+amarillo = CChocobo "amarillo" (5,3,3)
+negro = CChocobo "negro" (4,4,4)
+blanco = CChocobo "blanco" (2,3,6)
+rojo = CChocobo "rojo" (3,3,4)
 
-amarillo = Chocobo "amarillo" (5,3,3)
-negro = Chocobo "negro" (4,4,4)
-blanco = Chocobo "blanco" (2,3,6)
-rojo = Chocobo "rojo" (3,3,4)
-
-fuerza (Chocobo _ (f,_,_)) = f
-peso (Chocobo _ (_,p,_)) = p 
-velocidad (Chocobo _ (_,_,v)) = v 
+fuerza (CChocobo _ (f,_,_)) = f
+peso (CChocobo _ (_,p,_)) = p 
+velocidad (CChocobo _ (_,_,v)) = v 
 ```
 
 Finalmente estos chocobos estan dirigidos por los jinetes:
 
 ```haskell
-data TipoJinete = Jinete String TipoChocobo
+data Jinete = CJinete String Chocobo deriving (Show)
 
-instance Show TipoJinete where
-    show (Jinete nombre chocobo) = show (nombre, chocobo)
+leo = CJinete "Leo" amarillo
+gise = CJinete "Gise" blanco
+mati = CJinete "Mati" negro
+alf = CJinete "Alf" rojo
 
-leo = Jinete "Leo" amarillo
-gise = Jinete "Gise" blanco
-mati = Jinete "Mati" negro
-alf = Jinete "Alf" rojo
-
-nombre (Jinete n _) = n
-chocobo (Jinete _ ch) = ch 
+nombre (CJinete n _) = n
+chocobo (CJinete _ ch) = ch 
 
 apocalipsis = [leo, gise, mati, alf]
 ```
