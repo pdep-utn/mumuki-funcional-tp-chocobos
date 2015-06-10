@@ -1,4 +1,4 @@
-f4 (Chocobo _ (f,p,v)) = f + p + v
+data Chocobo = CChocobo String (Integer,Integer,Integer) 
 
 tiempo (CChocobo "amarillo" (5,3,3)) (100, f1) = 16
 tiempo (CChocobo "amarillo" (5,3,3)) (50, f2) = 6

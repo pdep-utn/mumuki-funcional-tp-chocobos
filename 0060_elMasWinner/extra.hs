@@ -1,7 +1,15 @@
 mayorSegun f valor1 valor2 = f valor1 > f valor2
 menorSegun f valor1 valor2 = f valor1 < f valor2
 
-f4 (CChocobo _ (f,p,v)) = f + p + v
+data Chocobo = CChocobo String (Integer,Integer,Integer) 
+data Jinete = CJinete String Chocobo
+
+leo = CJinete "Leo" amarillo
+gise = CJinete "Gise" blanco
+mati = CJinete "Mati" negro
+alf = CJinete "Alf" rojo
+
+apocalipsis = [leo, gise, mati, alf]
 
 elMejorDelTramo (100, f1) apocalipsis = "Gise"
 elMejorDelTramo (50, f2) apocalipsis = "Mati"

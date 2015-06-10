@@ -1,3 +1,5 @@
+data Chocobo = CChocobo String (Integer,Integer,Integer) 
+
 tiempoTotal bosqueTenebroso (CChocobo "amarillo" (5,3,3)) = 150
 tiempoTotal bosqueTenebroso (CChocobo "negro" (4,4,4)) = 138
 tiempoTotal bosqueTenebroso (CChocobo "blanco" (2,3,6)) = 85

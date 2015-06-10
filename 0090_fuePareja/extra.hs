@@ -1,6 +1,8 @@
 mayorSegun f valor1 valor2 = f valor1 > f valor2
 menorSegun f valor1 valor2 = f valor1 < f valor2
 
+data Chocobo = CChocobo String (Integer,Integer,Integer) 
+
 tiempoTotal bosqueTenebroso (CChocobo "amarillo" (5,3,3)) = 150
 tiempoTotal bosqueTenebroso (CChocobo "negro" (4,4,4)) = 138
 tiempoTotal bosqueTenebroso (CChocobo "blanco" (2,3,6)) = 85
