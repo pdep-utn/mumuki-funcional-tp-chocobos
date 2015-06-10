@@ -1,11 +1,11 @@
+data Chocobo = CChocobo String (Integer,Integer,Integer) deriving (Show)
+
 bosqueTenebroso = [ (100, f1) , (50, f2) , (120, f2) , (200, f1) , (80, f3) ]
 pantanoDelDestino = [ (40, f2) , (90, (\(CChocobo _ (f,p,v))-> f + p + v)) , (120, fuerza) , (20, fuerza) ]
 
 f1 chocobo = velocidad chocobo * 2
 f2 chocobo = velocidad chocobo + fuerza chocobo
 f3 chocobo = velocidad chocobo `div` peso chocobo
-
-data Chocobo = CChocobo String (Integer,Integer,Integer) deriving (Show)
 
 amarillo = CChocobo "amarillo" (5,3,3)
 negro = CChocobo "negro" (4,4,4)
