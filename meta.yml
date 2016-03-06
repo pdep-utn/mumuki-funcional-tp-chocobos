@@ -1,10 +1,10 @@
 ---
-name: 'Práctica Chocobos'
+name: Práctica Chocobos
 locale: es
-learning: false
+type: practice
 beta: true
 language: haskell
-original_id_format: '%05d'
+id_format: '%05d'
 order:
 - 10
 - 20
