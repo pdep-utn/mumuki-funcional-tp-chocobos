@@ -2,6 +2,6 @@
 
 ```haskell
 > podio bosqueTenebroso apocalipsis
-[("Gise",("blanco",(2,3,6))),("Mati",("negro",(4,4,4))),("Alf",("rojo",(3,3,4)))]
+[CJinete "Leo" (CChocobo "amarillo" (5,3,3)),CJinete "Mati" (CChocobo "negro" (4,4,4)),CJinete "Alf" (CChocobo "rojo" (3,3,4))]
 ```
 
