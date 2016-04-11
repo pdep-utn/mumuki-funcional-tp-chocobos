@@ -16,15 +16,15 @@ fuerza (CChocobo _ (f,_,_)) = f
 peso (CChocobo _ (_,p,_)) = p 
 velocidad (CChocobo _ (_,_,v)) = v 
 
-data Jinete = CJinete String Chocobo deriving (Show)
+data Jinete = CJinete {
+    String :: nombre,
+    Chocobo :: chocobo
+  } deriving (Show)
 
 leo = CJinete "Leo" amarillo
 gise = CJinete "Gise" blanco
 mati = CJinete "Mati" negro
 alf = CJinete "Alf" rojo
-
-nombre (CJinete n _) = n
-chocobo (CJinete _ ch) = ch
 
 apocalipsis = [leo, gise, mati, alf]
 
