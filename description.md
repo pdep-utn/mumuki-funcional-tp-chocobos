@@ -14,30 +14,30 @@ f3 chocobo = velocidad chocobo `div` peso chocobo
 Tenemos los chocobos (esenciales para una carrera de chocobos): el negro, el amarillo, el blanco y el rojo. Cada uno tiene distintas características, modeladas por medio de un data:
 
 ```haskell
-data Chocobo = UnChocobo String (Integer,Integer,Integer) deriving (Show)
+data Chocobo = CChocobo String (Integer,Integer,Integer) deriving (Show)
 
-amarillo = UnChocobo "amarillo" (5,3,3)
-negro = UnChocobo "negro" (4,4,4)
-blanco = UnChocobo "blanco" (2,3,6)
-rojo = UnChocobo "rojo" (3,3,4)
+amarillo = CChocobo "amarillo" (5,3,3)
+negro = CChocobo "negro" (4,4,4)
+blanco = CChocobo "blanco" (2,3,6)
+rojo = CChocobo "rojo" (3,3,4)
 
-fuerza (UnChocobo _ (f,_,_)) = f
-peso (UnChocobo _ (_,p,_)) = p 
-velocidad (UnChocobo _ (_,_,v)) = v 
+fuerza (CChocobo _ (f,_,_)) = f
+peso (CChocobo _ (_,p,_)) = p 
+velocidad (CChocobo _ (_,_,v)) = v 
 ```
 
 Finalmente estos chocobos estan dirigidos por los jinetes:
 
 ```haskell
-data Jinete = UnJinete {
+data Jinete = CJinete {
     String :: nombre,
     Chocobo :: chocobo
   } deriving (Show)
 
-leo = UnJinete "Leo" amarillo
-gise = UnJinete "Gise" blanco
-mati = UnJinete "Mati" negro
-alf = UnJinete "Alf" rojo
+leo = CJinete "Leo" amarillo
+gise = CJinete "Gise" blanco
+mati = CJinete "Mati" negro
+alf = CJinete "Alf" rojo
 
 apocalipsis = [leo, gise, mati, alf]
 ```
