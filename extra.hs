@@ -1,6 +1,12 @@
 data Chocobo = CChocobo String (Integer,Integer,Integer) deriving (Show)
 
+type Tramo = (Int, Chocobo -> Int)
+type Carrera = [Tramo]
+
+bosqueTenebroso :: Carrera
 bosqueTenebroso = [ (100, f1) , (50, f2) , (120, f2) , (200, f1) , (80, f3) ]
+
+pantanoDelDestino :: Carrera
 pantanoDelDestino = [ (40, f2) , (90, (\(CChocobo _ (f,p,v))-> f + p + v)) , (120, fuerza) , (20, fuerza) ]
 
 f1 chocobo = velocidad chocobo * 2

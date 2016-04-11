@@ -3,7 +3,13 @@ Las carreras de chocobos son un entretenimiento cada día más popular, y por lo
 Las pistas por las que nuestros emplumados amigos deben correr van a estar representadas por listas de tramos, cada tramo a su vez sera representado por una tupla (distancia, correcionDeVelocidad).
 
 ```haskell
+type Tramo = (Int, Chocobo -> Int)
+type Carrera = [Tramo]
+
+bosqueTenebroso :: Carrera
 bosqueTenebroso = [ (100, f1) , (50, f2) , (120, f2) , (200, f1) , (80, f3) ]
+
+pantanoDelDestino :: Carrera
 pantanoDelDestino = [ (40, f2) , (90, (\(CChocobo _ (f,p,v))-> f + p + v)) , (120, fuerza) , (20, fuerza) ]
 
 f1 chocobo = velocidad chocobo * 2
