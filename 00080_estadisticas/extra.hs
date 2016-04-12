@@ -7,3 +7,6 @@ elMejorDelTramo tramo = elNombreDelMejorSegun (menorSegun (flip tiempo tramo.cho
 elNombreDelMejorSegun f = nombre.head.quickSort f
 
 tiempo chocobo (distancia,velocidadCorregida) = distancia `div` velocidadCorregida chocobo
+tiempoTotal carrera chocobo = sum . map (tiempo chocobo) $ carrera
+
+tramosGanados carrera jinetes jinete = (length.filter ((== nombre jinete).flip elMejorDelTramo jinetes)) carrera

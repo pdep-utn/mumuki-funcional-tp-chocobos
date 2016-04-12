@@ -1,0 +1,8 @@
+---
+expectations:
+- binding: estadisticas
+  inspection: HasBinding
+- binding: estadisticas
+  inspection: HasUsage:tramosGanados
+- binding: estadisticas
+  inspection: HasUsage:tiempoTotal
