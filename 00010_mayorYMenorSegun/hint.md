@@ -1,0 +1,1 @@
+Tené en cuenta que esta función debería ser independiente del dominio del ejercicio.

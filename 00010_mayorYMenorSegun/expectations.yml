@@ -1,0 +1,6 @@
+---
+expectations:
+- binding: menorSegun
+  inspection: HasBinding
+- binding: mayorSegun
+  inspection: HasBinding
