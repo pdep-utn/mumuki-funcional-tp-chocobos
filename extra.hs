@@ -1,4 +1,4 @@
-data Chocobo = CChocobo String (Integer,Integer,Integer) deriving (Show)
+data Chocobo = CChocobo String (Integer,Integer,Integer) deriving (Show, Eq)
 
 type Tramo = (Int, Chocobo -> Int)
 type Carrera = [Tramo]
@@ -25,7 +25,7 @@ velocidad (CChocobo _ (_,_,v)) = v
 data Jinete = CJinete {
     String :: nombre,
     Chocobo :: chocobo
-  } deriving (Show)
+  } deriving (Show, Eq)
 
 leo = CJinete "Leo" amarillo
 gise = CJinete "Gise" blanco

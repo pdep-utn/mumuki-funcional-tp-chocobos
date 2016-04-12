@@ -20,7 +20,7 @@ f3 chocobo = velocidad chocobo `div` peso chocobo
 Tenemos los chocobos (esenciales para una carrera de chocobos): el negro, el amarillo, el blanco y el rojo. Cada uno tiene distintas características, modeladas por medio de un data:
 
 ```haskell
-data Chocobo = CChocobo String (Integer,Integer,Integer) deriving (Show)
+data Chocobo = CChocobo String (Integer,Integer,Integer) deriving (Show, Eq)
 
 amarillo = CChocobo "amarillo" (5,3,3)
 negro = CChocobo "negro" (4,4,4)
@@ -38,7 +38,7 @@ Finalmente estos chocobos estan dirigidos por los jinetes:
 data Jinete = CJinete {
     String :: nombre,
     Chocobo :: chocobo
-  } deriving (Show)
+  } deriving (Show, Eq)
 
 leo = CJinete "Leo" amarillo
 gise = CJinete "Gise" blanco
