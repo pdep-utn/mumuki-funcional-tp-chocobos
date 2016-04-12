@@ -1,4 +1,4 @@
-Las carreras de chocobos son un entretenimiento cada día más popular, y por lo tanto ya es hora de armar un programa que nos ayude a analizarlas como es debido. Elegimos hacerlo en haskell, básicamente por inercia(y... ya que lo venimos usando hace 2 meses sigamos con eso).
+Las carreras de chocobos son un entretenimiento cada día más popular, y por lo tanto ya es hora de armar un programa que nos ayude a analizarlas como es debido. Elegimos hacerlo en Haskell, básicamente por inercia (y... ya que lo venimos usando hace un tiempo sigamos con eso).
 
 Las pistas por las que nuestros emplumados amigos deben correr van a estar representadas por listas de tramos, cada tramo a su vez sera representado por una tupla (distancia, correcionDeVelocidad).
 
