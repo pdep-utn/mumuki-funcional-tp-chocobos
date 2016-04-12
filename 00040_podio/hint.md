@@ -1,0 +1,1 @@
+Gran parte del problema ya está resuelto, si se te ocurre cómo usar las funciones que ya tenés definidas :wink:
