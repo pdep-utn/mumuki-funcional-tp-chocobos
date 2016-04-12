@@ -1,1 +1,1 @@
-Tené en cuenta que esta función debería ser independiente del dominio del ejercicio.
+Tené en cuenta que estas funciones deberían ser independientes del dominio del ejercicio.
