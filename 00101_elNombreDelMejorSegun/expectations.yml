@@ -4,5 +4,3 @@ expectations:
   inspection: HasBinding
 - binding: elNombreDelMejorSegun
   inspection: HasComposition
-- binding: elNombreDelMejorSegun
-  inspection: Not:HasRedundantParameter
