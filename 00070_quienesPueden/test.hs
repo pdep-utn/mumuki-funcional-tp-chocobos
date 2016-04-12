@@ -1,3 +1,5 @@
-describe "5 - Quienes pueden recorrer un tramo en un tiempo determinado" $ do
-	it "Los jinetes que recorren el primer tramo de pantanoDelDestino en 10 son leo, gise, mati y alf" $ do
-		quienesPueden (head pantanoDelDestino) 8 apocalipsis `shouldBe` ["Leo","Gise","Mati","Alf"]
+it "Todos los jinetes del apocalipsis pueden recorrer el primer tramo de pantanoDelDestino en 10" $ do
+		quienesPueden (head pantanoDelDestino) 10 apocalipsis `shouldBe` ["Leo","Gise","Mati","Alf"]
+		
+it "Los que pueden recorrer el primer tramo de bosqueTenebroso en 12" $ do
+		quienesPueden (head bosqueTenebroso) 12  apocalipsis `shouldBe` ["Gise", "Mati", "Alf"]
