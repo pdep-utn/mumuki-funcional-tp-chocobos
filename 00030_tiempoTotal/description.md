@@ -2,5 +2,5 @@ Determinar el tiempo total de un chocobo en una carrera, siendo el mismo la suma
 
 ```haskell
 ム tiempoTotal bosqueTenebroso amarillo
-16
+150
 ```

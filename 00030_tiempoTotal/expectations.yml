@@ -6,3 +6,5 @@ expectations:
   inspection: HasUsage:tiempo
 - binding: tiempoTotal
   inspection: Not:HasDirectRecursion
+- binding: tiempoTotal
+  inspection: HasComposition
