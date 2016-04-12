@@ -4,3 +4,5 @@ Determinar el tiempo total de un chocobo en una carrera, siendo el mismo la suma
 ム tiempoTotal bosqueTenebroso amarillo
 150
 ```
+
+Resolvelo usando orden superior y composición.
