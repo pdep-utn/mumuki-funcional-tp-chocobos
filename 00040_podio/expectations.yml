@@ -1,0 +1,10 @@
+---
+expectations:
+- binding: podio
+  inspection: HasBinding
+- binding: podio
+  inspection: Not:HasDirectRecursion
+- binding: podio
+  inspection: Not:HasLambda
+- binding: podio
+  inspection: HasComposition

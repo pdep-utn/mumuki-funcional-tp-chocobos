@@ -1,1 +1,1 @@
-Genial! Acabás de definir dos funciones que te van a ser muy útiles próximamente, no te las olvides :wink:
+¡Genial! Acabás de definir dos funciones que te van a ser muy útiles próximamente, no te las olvides :wink:

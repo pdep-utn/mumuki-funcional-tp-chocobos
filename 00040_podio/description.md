@@ -2,6 +2,7 @@ Obtener el podio de una carrera, representado por una lista ordenada de los 3 pr
 
 ```haskell
 ム podio bosqueTenebroso apocalipsis
-[CJinete "Leo" (CChocobo "amarillo" (5,3,3)),CJinete "Mati" (CChocobo "negro" (4,4,4)),CJinete "Alf" (CChocobo "rojo" (3,3,4))]
+[CJinete "Gise" (CChocobo "blanco" (2,3,6)),CJinete "Mati" (CChocobo "negro" (4,4,4)),CJinete "Alf" (CChocobo "rojo" (3,3,4))]
 ```
 
+Resolvelo usando orden superior, composición y aplicación parcial.

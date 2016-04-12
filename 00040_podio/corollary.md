@@ -1,0 +1,1 @@
+¡Excelente! ¿Viste cómo armar pequeñas funciones genéricas puede hacer toda la diferencia al querer solucionar problemas complejos?
