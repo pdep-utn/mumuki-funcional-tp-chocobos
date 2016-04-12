@@ -8,4 +8,4 @@ it "La velocidad del chocobo plateado debería ser 6" $ do
 		velocidad plateado `shouldBe` 6
 		
 it "El nombre del chocobo plateado debería ser \"plateado\"" $ do
-    (\(CChocobo nombre _) -> nombre) `shouldBe` "plateado"
+    (\(CChocobo nombre _) -> nombre) plateado `shouldBe` "plateado"
