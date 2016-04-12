@@ -1,0 +1,1 @@
+Se pueden usar las funciones `maximum` y `minimum`.

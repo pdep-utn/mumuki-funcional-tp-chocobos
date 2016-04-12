@@ -1,0 +1,12 @@
+---
+expectations:
+- binding: plateado
+  inspection: HasBinding
+- binding: plateado
+  inspection: HasUsage:amarillo
+- binding: plateado
+  inspection: HasUsage:negro
+- inspection: HasUsage:blanco
+  binding: plateado
+- inspection: HasUsage:rojo
+  binding: plateado

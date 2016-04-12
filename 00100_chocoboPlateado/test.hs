@@ -1,7 +1,11 @@
-describe "8 - Chocobo plateado" $ do
-	it "La fuerza del chocobo plateado deberia ser 5" $ do
+it "La fuerza del chocobo plateado debería ser 5" $ do
 		fuerza plateado `shouldBe` 5
-	it "El peso del chocobo plateado deberia ser 3" $ do
+		
+it "El peso del chocobo plateado debería ser 3" $ do
 		peso plateado `shouldBe` 3
-	it "La velocidad del chocobo plateado deberia ser 6" $ do
+		
+it "La velocidad del chocobo plateado debería ser 6" $ do
 		velocidad plateado `shouldBe` 6
+		
+it "El nombre del chocobo plateado debería ser \"plateado\"" $ do
+    (\(CChocobo nombre _) -> nombre) `shouldBe` "plateado"
