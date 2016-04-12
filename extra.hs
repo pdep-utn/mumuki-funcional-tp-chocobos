@@ -22,15 +22,15 @@ fuerza (UnChocobo _ (f,_,_)) = f
 peso (UnChocobo _ (_,p,_)) = p 
 velocidad (UnChocobo _ (_,_,v)) = v 
 
-data Jinete = CJinete {
+data Jinete = UnJinete {
     String :: nombre,
     Chocobo :: chocobo
   } deriving (Show, Eq)
 
-leo = CJinete "Leo" amarillo
-gise = CJinete "Gise" blanco
-mati = CJinete "Mati" negro
-alf = CJinete "Alf" rojo
+leo = UnJinete "Leo" amarillo
+gise = UnJinete "Gise" blanco
+mati = UnJinete "Mati" negro
+alf = UnJinete "Alf" rojo
 
 apocalipsis = [leo, gise, mati, alf]
 
