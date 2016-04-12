@@ -3,7 +3,7 @@ describe "mayorSegun" $ do
 		amarillo `shouldSatisfy` mayorSegun f1 negro
 	
 	it "El jinete con nombre más largo entre leo y gise deberia ser gise" $ do
-	  gise `shouldSatisfy` mayorSegun (length.nombre) leo
+	  leo `shouldSatisfy` mayorSegun (length.nombre) gise
 		
 describe "menorSegun" $ do
 	it "El menor segun f1 entre amarillo y negro deberia ser el amarillo" $ do
