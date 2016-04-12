@@ -1,6 +1,5 @@
-describe "Jinete que tarda menos en recorrer un tramo" $ do
-	it "El jinete mas rápido del primer tramo de pantanoDelDestino es alf" $ do
-		elMejorDelTramo (head pantanoDelDestino) apocalipsis `shouldBe` "Alf"
+it "El jinete mas rápido del primer tramo de pantanoDelDestino es alf" $ do
+	elMejorDelTramo (head pantanoDelDestino) apocalipsis `shouldBe` "Alf"
 		
-	it "El jinete mas rápido del primer tramo de bosqueTenebroso es gise" $ do
-		elMejorDelTramo (head pantanoDelDestino) apocalipsis `shouldBe` "Gise"
+it "El jinete mas rápido del primer tramo de bosqueTenebroso es gise" $ do
+	elMejorDelTramo (head pantanoDelDestino) apocalipsis `shouldBe` "Gise"
