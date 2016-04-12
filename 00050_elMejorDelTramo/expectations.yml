@@ -1,0 +1,8 @@
+---
+expectations:
+- binding: elMejorDelTramo
+  inspection: HasBinding
+- binding: elMejorDelTramo
+  inspection: HasUsage:elNombreDelMejorSegun
+- binding: elMejorDelTramo
+  inspection: HasComposition
