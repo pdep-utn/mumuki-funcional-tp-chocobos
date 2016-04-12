@@ -1,0 +1,1 @@
+Recordá que ya existen las funciones `tiempoTotal` y `tramosGanados`
