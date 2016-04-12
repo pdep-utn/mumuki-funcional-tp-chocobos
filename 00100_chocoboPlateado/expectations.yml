@@ -6,7 +6,7 @@ expectations:
   inspection: HasUsage:amarillo
 - binding: plateado
   inspection: HasUsage:negro
-- inspection: HasUsage:blanco
-  binding: plateado
-- inspection: HasUsage:rojo
-  binding: plateado
+- binding: plateado
+  inspection: HasUsage:blanco
+- binding: plateado
+  inspection: HasUsage:rojo
