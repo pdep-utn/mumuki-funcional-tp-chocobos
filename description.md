@@ -4,12 +4,12 @@ Las pistas por las que nuestros emplumados amigos deben correr van a estar repre
 
 ```haskell
 type Tramo = (Int, Chocobo -> Int)
-type Carrera = [Tramo]
+type Pista = [Tramo]
 
-bosqueTenebroso :: Carrera
+bosqueTenebroso :: Pista
 bosqueTenebroso = [ (100, f1) , (50, f2) , (120, f2) , (200, f1) , (80, f3) ]
 
-pantanoDelDestino :: Carrera
+pantanoDelDestino :: Pista
 pantanoDelDestino = [ (40, f2) , (90, (\(CChocobo _ (f,p,v))-> f + p + v)) , (120, fuerza) , (20, fuerza) ]
 
 f1 chocobo = velocidad chocobo * 2
