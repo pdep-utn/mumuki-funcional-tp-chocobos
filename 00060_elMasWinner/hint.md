@@ -1,0 +1,1 @@
+Usá la función elNombreDelMejorSegun. Además, la función del punto anterior puede ser de utilidad :wink:

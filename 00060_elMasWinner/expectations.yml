@@ -1,0 +1,14 @@
+---
+expectations:
+- binding: elMasWinner
+  inspection: HasBinding
+- binding: tramosGanados
+  inspection: HasBinding
+- binding: elMasWinner
+  inspection: HasComposition
+- binding: elMasWinner
+  inspection: HasUsage:tramosGanados
+- binding: elMasWinner
+  inspection: HasUsage:elNombreDelMejorSegun
+- binding: tramosGanados
+  inspection: HasUsage:elMejorDelTramo
