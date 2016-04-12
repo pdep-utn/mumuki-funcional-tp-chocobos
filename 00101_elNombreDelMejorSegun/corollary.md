@@ -1,0 +1,1 @@
+Acabás de agregar una nueva función útil a tu caja de herramientas :+1: ¡Ahora, la gracia va a ser usarla!
