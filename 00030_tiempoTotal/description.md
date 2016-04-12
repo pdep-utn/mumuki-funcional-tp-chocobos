@@ -1,6 +1,6 @@
-2. b. Determinar el tiempo total de un chocobo en una carrera.
+Determinar el tiempo total de un chocobo en una carrera, siendo el mismo la suma de lo que tarda en recorrer cada tramo.
 
 ```haskell
-> tiempoTotal bosqueTenebroso amarillo
+ム tiempoTotal bosqueTenebroso amarillo
 16
 ```

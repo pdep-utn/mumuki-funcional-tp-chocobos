@@ -1,0 +1,8 @@
+---
+expectations:
+- binding: tiempoTotal
+  inspection: HasBinding
+- binding: tiempoTotal
+  inspection: HasUsage:tiempo
+- binding: tiempoTotal
+  inspection: Not:HasDirectRecursion
