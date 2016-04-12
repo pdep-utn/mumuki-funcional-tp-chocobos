@@ -4,3 +4,5 @@ Desarrollá la función `quienesPueden` para saber los nombres de los jinetes qu
 ム quienesPueden (head bosqueTenebroso) 12 apocalipsis
 ["Gise", "Mati", "Alf"]
 ```
+
+Definila usando orden superior, composición y aplicación parcial.

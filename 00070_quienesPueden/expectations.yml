@@ -1,0 +1,6 @@
+---
+expectations:
+- binding: quienesPueden
+  inspection: HasBinding
+- binding: quienesPueden
+  inspection: HasComposition
