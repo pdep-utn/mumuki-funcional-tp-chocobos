@@ -1,6 +1,6 @@
 data Chocobo = UnChocobo String (Integer,Integer,Integer) deriving (Show, Eq)
 
-type Tramo = (Int, Chocobo -> Int)
+type Tramo = (Integer, Chocobo -> Integer)
 type Pista = [Tramo]
 
 bosqueTenebroso :: Pista
