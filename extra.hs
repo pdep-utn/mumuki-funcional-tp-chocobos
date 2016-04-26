@@ -23,8 +23,8 @@ peso (UnChocobo _ (_,p,_)) = p
 velocidad (UnChocobo _ (_,_,v)) = v 
 
 data Jinete = UnJinete {
-    String :: nombre,
-    Chocobo :: chocobo
+    nombre :: String,
+    chocobo :: Chocobo
   } deriving (Show, Eq)
 
 leo = UnJinete "Leo" amarillo
