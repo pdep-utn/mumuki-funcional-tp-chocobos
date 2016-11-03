@@ -3,6 +3,7 @@ name: Práctica Chocobo
 locale: es
 type: practice
 beta: true
+teacher_info: 
 language: haskell
 id_format: '%05d'
 order:
